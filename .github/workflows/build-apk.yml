@@ -23,6 +23,8 @@ jobs:
           java-version: "17"
 
       - uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
 
       - name: Установка .NET Android workload и Android SDK
         shell: pwsh
