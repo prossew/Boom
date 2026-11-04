@@ -15,7 +15,15 @@ jobs:
 
       - uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 8.0.x
+          dotnet-version: 8.0.427
+
+      - name: Выбор установленного .NET 8 SDK
+        shell: pwsh
+        run: |
+          '{"sdk":{"version":"8.0.427","rollForward":"latestPatch"}}' | Set-Content -Path global.json -NoNewline
+          $version = dotnet --version
+          Write-Host "Используется .NET SDK $version"
+          if (-not $version.StartsWith("8.0.")) { throw "Для Android target net8.0 требуется SDK 8, найден $version" }
 
       - uses: actions/setup-java@v4
         with:
