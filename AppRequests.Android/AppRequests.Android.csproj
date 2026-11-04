@@ -1,20 +1,15 @@
-<Project Sdk="MSBuild.Sdks/Xamarin.Android.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <AssemblyName>AppRequests.Android</AssemblyName>
+    <OutputType>Exe</OutputType>
     <AndroidApplication>True</AndroidApplication>
-    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
-    <AndroidResgenClass>Resource</AndroidResgenClass>
     <RootNamespace>AppRequests.Droid</RootNamespace>
-    <TargetFramework>net8.0-android</TargetFramework>
-    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <MandroidI18n>none</MandroidI18n>
-    <AndroidEnableSgenConcurrent>true</AndroidEnableSgenConcurrent>
+    <TargetFramework>net8.0-android34.0</TargetFramework>
+    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
     <AndroidLinkMode>None</AndroidLinkMode>
-    <AndroidAotMode>None</AndroidAotMode>
-    <AndroidSupportedAbis>armeabi-v7a;arm64-v8a;x86;x86_64</AndroidSupportedAbis>
-    <AndroidMinimumApiLevel>21</AndroidMinimumApiLevel>
-    <AndroidTargetApiLevel>34</AndroidTargetApiLevel>
+    <AndroidPackageFormat>apk</AndroidPackageFormat>
+    <EmbedAssembliesIntoApk Condition="'$(Configuration)' == 'Release'">True</EmbedAssembliesIntoApk>
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,20 +25,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AppRequests\AppRequests.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon_about.png" />
-    <AndroidResource Include="Resources\drawable\icon_feed.png" />
-    <AndroidResource Include="Resources\mipmap-ldpi\icon.png" />
-    <AndroidResource Include="Resources\mipmap-mdpi\icon.png" />
-    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
-    <AndroidResource Include="Resources\mipmap-xhdpi\icon.png" />
-    <AndroidResource Include="Resources\mipmap-xxhdpi\icon.png" />
-    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
-    <AndroidResource Include="Resources\layout\*.axml" />
-    <AndroidResource Include="Resources\values\*.xml" />
-    <AndroidResource Include="Resources\values-night\*.xml" />
   </ItemGroup>
 
 </Project>
