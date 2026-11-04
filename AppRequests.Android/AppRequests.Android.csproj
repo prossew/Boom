@@ -17,6 +17,7 @@
     <PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2662" />
     <PackageReference Include="Xamarin.AndroidX.RecyclerView" Version="1.2.1.5" />
+    <PackageReference Include="Xamarin.Google.Guava.ListenableFuture" Version="9999.0.0" />
   </ItemGroup>
 
   <ItemGroup>
