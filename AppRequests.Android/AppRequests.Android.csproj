@@ -8,6 +8,7 @@
     <TargetFramework>net8.0-android34.0</TargetFramework>
     <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <RunAOTCompilation>False</RunAOTCompilation>
     <AndroidPackageFormat>apk</AndroidPackageFormat>
     <EmbedAssembliesIntoApk Condition="'$(Configuration)' == 'Release'">True</EmbedAssembliesIntoApk>
   </PropertyGroup>
