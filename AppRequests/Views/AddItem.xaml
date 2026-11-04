@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppRequests"
+             x:Class="AppRequests.Views.AddItem"
+             Title="Добавление заявок">
+    <ScrollView>
+        <StackLayout BackgroundColor="White" Padding="10" Spacing="10">
+            <Label Text="Программа:" TextColor="Black" FontSize="Medium" />
+            <Entry x:Name="nameEntry" TextColor="Black" ClearButtonVisibility="WhileEditing" MaxLength="30"
+                   Placeholder="Введите название программы" />
+
+            <Label Text="Телефон:" TextColor="Black" FontSize="Medium" />
+            <Entry x:Name="phoneEntry" TextColor="Black" ClearButtonVisibility="WhileEditing" MaxLength="18"
+                   Keyboard="Telephone" Placeholder="+7 (912) 345-67-89" />
+
+            <Label Text="Объём памяти:" TextColor="Black" FontSize="Medium" />
+            <Entry x:Name="memoryEntry" TextColor="Black" ClearButtonVisibility="WhileEditing" MaxLength="20"
+                   Placeholder="Например: 8 ГБ, 256 ГБ SSD" />
+
+            <Label Text="Платформа:" TextColor="Black" FontSize="Medium" />
+            <Entry x:Name="platformEntry" TextColor="Black" ClearButtonVisibility="WhileEditing" MaxLength="30"
+                   Placeholder="Windows, macOS, Linux, Android, iOS" />
+
+            <Label Text="Опишите проблему:" TextColor="Black" FontSize="Medium" />
+            <Editor x:Name="textEntry" TextColor="Black" HeightRequest="100" MaxLength="200"
+                    Placeholder="Кратко опишите неисправность или задачу" />
+
+            <Button Text="Отправить" BackgroundColor="#992196fe" TextColor="White"
+                    Clicked="AddButton_Clicked" HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

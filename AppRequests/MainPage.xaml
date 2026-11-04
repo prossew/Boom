@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="clr-namespace:AppRequests.Views;assembly=AppRequests"
+       x:Class="AppRequests.MainPage">
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.TabBarUnselectedColor" Value="Gray" />
+                <Setter Property="Shell.TabBarTitleColor" Value="#992196fe" />
+            </Style>
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <TabBar>
+        <ShellContent Title="О программе" Icon="icon_about.png" ContentTemplate="{DataTemplate views:AboutPage}" />
+        <ShellContent Title="Добавить" Icon="icon_feed.png" ContentTemplate="{DataTemplate views:AddItem}" />
+        <ShellContent Title="Посмотреть" Icon="icon_feed.png" ContentTemplate="{DataTemplate views:ItemPage}" />
+    </TabBar>
+</Shell>

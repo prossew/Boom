@@ -1,0 +1,49 @@
+<Project Sdk="MSBuild.Sdks/Xamarin.Android.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>AppRequests.Android</AssemblyName>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <RootNamespace>AppRequests.Droid</RootNamespace>
+    <TargetFramework>net8.0-android</TargetFramework>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <MandroidI18n>none</MandroidI18n>
+    <AndroidEnableSgenConcurrent>true</AndroidEnableSgenConcurrent>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidAotMode>None</AndroidAotMode>
+    <AndroidSupportedAbis>armeabi-v7a;arm64-v8a;x86;x86_64</AndroidSupportedAbis>
+    <AndroidMinimumApiLevel>21</AndroidMinimumApiLevel>
+    <AndroidTargetApiLevel>34</AndroidTargetApiLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2662" />
+    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.Core.UI" Version="1.0.0.15" />
+    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.Core.Utils" Version="1.0.0.15" />
+    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.V4" Version="1.0.0.15" />
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.3.1.3" />
+    <PackageReference Include="Xamarin.AndroidX.Annotation" Version="1.1.0.9" />
+    <PackageReference Include="Xamarin.AndroidX.Collection" Version="1.1.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AppRequests\AppRequests.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_about.png" />
+    <AndroidResource Include="Resources\drawable\icon_feed.png" />
+    <AndroidResource Include="Resources\mipmap-ldpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
+    <AndroidResource Include="Resources\layout\*.axml" />
+    <AndroidResource Include="Resources\values\*.xml" />
+    <AndroidResource Include="Resources\values-night\*.xml" />
+  </ItemGroup>
+
+</Project>

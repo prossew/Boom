@@ -1,0 +1,17 @@
+/Users/nick/Documents/ss/AppRequests/AppRequests/obj/Debug/netstandard2.0/AppRequests.csproj.AssemblyReference.cache
+/Users/nick/Documents/ss/AppRequests/AppRequests/obj/Debug/netstandard2.0/AppRequests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nick/Documents/ss/AppRequests/AppRequests/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/nick/Documents/ss/AppRequests/AppRequests/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/nick/Documents/ss/AppRequests/AppRequests/obj/Debug/netstandard2.0/Views/AboutPage.xaml.g.cs
+/Users/nick/Documents/ss/AppRequests/AppRequests/obj/Debug/netstandard2.0/Views/AddItem.xaml.g.cs
+/Users/nick/Documents/ss/AppRequests/AppRequests/obj/Debug/netstandard2.0/Views/ItemPage.xaml.g.cs
+/Users/nick/Documents/ss/AppRequests/AppRequests/obj/Debug/netstandard2.0/AppRequests.AssemblyInfoInputs.cache
+/Users/nick/Documents/ss/AppRequests/AppRequests/obj/Debug/netstandard2.0/AppRequests.AssemblyInfo.cs
+/Users/nick/Documents/ss/AppRequests/AppRequests/obj/Debug/netstandard2.0/AppRequests.csproj.CoreCompileInputs.cache
+/Users/nick/Documents/ss/AppRequests/AppRequests/obj/Debug/netstandard2.0/AppRequests.sourcelink.json
+/Users/nick/Documents/ss/AppRequests/AppRequests/bin/Debug/netstandard2.0/AppRequests.deps.json
+/Users/nick/Documents/ss/AppRequests/AppRequests/bin/Debug/netstandard2.0/AppRequests.dll
+/Users/nick/Documents/ss/AppRequests/AppRequests/bin/Debug/netstandard2.0/AppRequests.pdb
+/Users/nick/Documents/ss/AppRequests/AppRequests/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/nick/Documents/ss/AppRequests/AppRequests/obj/Debug/netstandard2.0/AppRequests.dll
+/Users/nick/Documents/ss/AppRequests/AppRequests/obj/Debug/netstandard2.0/AppRequests.pdb

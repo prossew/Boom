@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:AppRequests.Models;assembly=AppRequests"
+             x:Class="AppRequests.Views.ItemPage"
+             Title="Просмотр заявок">
+    <StackLayout Spacing="0">
+        <ListView x:Name="dataList" HasUnevenRows="True" VerticalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10" Spacing="4">
+                            <Label Text="{Binding Name}" TextColor="Black" FontSize="Large" />
+                            <Label Text="{Binding Phone, StringFormat='+{0}'}" TextColor="Black" FontSize="14" />
+                            <Label Text="{Binding Memory}" TextColor="Gray" FontSize="12" />
+                            <Label Text="{Binding Platform}" TextColor="Gray" FontSize="12" />
+                            <Label Text="{Binding Text}" TextColor="Black" FontSize="14"
+                                   LineBreakMode="WordWrap" />
+                            <Label Text=" " Margin="0" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Label x:Name="emptyLabel" Text="Заявок пока нет" TextColor="Gray"
+               HorizontalOptions="Center" VerticalOptions="CenterAndExpand" IsVisible="False" />
+
+        <Button Text="Обновить" BackgroundColor="#992196fe" TextColor="White"
+                Clicked="UpdateButton_Clicked" HorizontalOptions="FillAndExpand" />
+        <Button Text="Удалить" BackgroundColor="Red" TextColor="White"
+                Clicked="DeleteButton_Clicked" HorizontalOptions="FillAndExpand" />
+    </StackLayout>
+</ContentPage>

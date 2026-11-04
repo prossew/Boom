@@ -1,0 +1,21 @@
+<Project Sdk="MSBuild.Sdks/Xamarin.iOS.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>AppRequests.iOS</AssemblyName>
+    <RootNamespace>AppRequests</RootNamespace>
+    <TargetFramework>net8.0-ios</TargetFramework>
+    <MtouchLinkMode>None</MtouchLinkMode>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2662" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AppRequests\AppRequests.csproj" />
+  </ItemGroup>
+
+</Project>

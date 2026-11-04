@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRequests.Views.AboutPage"
+             Title="О программе">
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="База данных заявок на обслуживание программного обеспечения" FontAttributes="Bold" FontSize="Large" />
+                        <Span Text=" — версия 1.0" FontSize="Medium" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Назначение: " FontAttributes="Bold" />
+                        <Span Text="учёт заявок на обслуживание ПО (программа, телефон, объём памяти, платформа, описание проблемы)." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Как пользоваться: " FontAttributes="Bold" />
+                        <Span Text="вкладка «Добавить» — подать новую заявку; «Посмотреть» — список заявок, обновить или удалить; «О программе» — эта справка." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Телефон вводится в российском формате: " FontAttributes="Bold" />
+                        <Span Text="+7 (912) 345-67-89, 89123456789 или 8 912 345 67 89 — сохраняется в виде 11 цифр, начиная с 7." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

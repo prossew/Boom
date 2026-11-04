@@ -28,3 +28,4 @@ python3 tools/check_project.py
 
 Для сборки Android требуется установленная Android/Xamarin toolchain. `AppRequests.iOS` включён как заготовка и не требуется для Android-запуска.
 # Boom
+# Boom
